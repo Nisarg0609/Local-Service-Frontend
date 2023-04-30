@@ -1,0 +1,82 @@
+.recentJobs{
+
+}
+
+
+.recentJobs_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recentJobs_header-header h6{
+    margin-bottom: 1rem;
+}
+.recentJobs_header-text{
+    max-width: 600px;
+}
+
+
+
+.recentJobs_jobs-container{
+    margin: 4rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.recentJobs_jobs-container::-webkit-scrollbar{
+    width: 0;
+}
+.recentJobs_jobs-item{
+    max-height: 440px;
+    min-height: 440px;
+    min-width: 380px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(52, 69, 113, 0.16);
+    cursor: pointer;
+    margin: 0 1rem 1rem 1rem;
+    border-bottom: 4px solid blue;
+}
+.recentJobs_jobs-item:hover{
+    box-shadow: 0 0 20px rgba(38, 0, 255, 0.16);
+}
+.recentJobs_jobs-item_image img{
+    max-width: 100%;
+    height: 285px;
+    border-radius: 30px 30px 40px 40px;
+}
+
+
+
+.recentJobs_jobs-item_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2.5rem;
+    position: relative;
+}
+.recentJobs_jobs-item_content-time{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.recentJobs_jobs-item_content-line{
+    width: 1.3px;
+    height: 15px;
+    background-color: black;
+    margin: 0 1rem;
+}
+.recentJobs_jobs-item_content-time_button{
+    position: absolute;
+    top: -20px;
+    left: 40px;
+}
+
+
+
+
+.recentJobs_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

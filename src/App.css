@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/** for all, body, links, lists */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--color-bg);
+  font-family: var(--font-family);
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+li{
+  list-style: none;
+}
+button{
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  line-height: 25px;
+  color: #fff;
+  letter-spacing: 1px;
+  background : #FF4820;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+select option{
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/** section padding */
+.section__padding{
+  padding: 6rem 9rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/** plaintext */
+.p-large{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+}
+.p-medium{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: var(--font-family);
+}
+.p-small{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: var(--font-family);
+}
+.p-small_bold{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: var(--font-family);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+/** headtext */
+.headtext-large{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 500;
+  word-spacing: 3px;
+  font-family: var(--font-family);
+}
+.headtext-medium{
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 500;
+  word-spacing: 4px;
+  font-family: var(--font-family);
+}
+.headtext-small{
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+.headtext-e_small{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: var(--font-family);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/** gradient text */
+.gradient-text{
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/** gradient bg */
+.gradient__bg {
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+ 
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }

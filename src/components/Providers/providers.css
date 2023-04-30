@@ -1,0 +1,101 @@
+.providers{
+    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.providers_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.providers_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.providers_header-header h6{
+    margin-bottom: 1rem;
+}
+.providers_header-text{
+    max-width: 600px;
+}
+
+
+
+
+.providers_content{
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.providers_content::-webkit-scrollbar{
+    width: 0;
+}
+.providers_content-item{
+    width: 370px;
+    height: 480px;
+    padding: 2rem;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(52, 69, 113, 0.16);
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    margin: 2rem 1rem;
+}
+.providers_content-slider{
+    width: 100%;
+    height: 40%;
+    border-radius: 40px;
+    background-color: #0a2280;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.providers_content-item_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.providers_content-item_heading-text h6{
+    font-weight: 600;
+}
+.providers_content-item_heading-leftLogo{
+    width: 32px;
+    height: 32px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.providers_content-item_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.providers_content-item_content-image{
+    width: 270px;
+    height: 180px;
+}
+.providers_content-item_content-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.providers_content-item_content-text{
+    margin: 2rem 0 1.5rem 0;
+}
